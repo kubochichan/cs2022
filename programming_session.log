@@ -401,3 +401,223 @@ Ok, one module loaded.
 Leaving GHCi.
 ]0;airi@LAPTOP-S1M5429M: ~/cs2022[01;32mairi@LAPTOP-S1M5429M[00m:[01;34m~/cs2022[00m$ ]0;airi@LAPTOP-S1M5429M: ~/cs2022[01;32mairi@LAPTOP-S1M5429M[00m:[01;34m~/cs2022[00m$ ggtt[K[Kiitt  aadddd  ..
 
+]0;airi@LAPTOP-S1M5429M: ~/cs2022[01;32mairi@LAPTOP-S1M5429M[00m:[01;34m~/cs2022[00m$ ]0;airi@LAPTOP-S1M5429M: ~/cs2022[01;32mairi@LAPTOP-S1M5429M[00m:[01;34m~/cs2022[00m$ ggiitt  ccoomm[K[Knnnn[K[K[K[Kmmmmiitt  --mm  ""ssttaarrtt  pprroojjeecctt""[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kaagg[K[Kllggoo""
+
+[main 850bc62] start algo
+[main 850bc62] start algo
+ 4 files changed, 425 insertions(+), 1 deletion(-)
+ create mode 100644 ghci.log
+ create mode 100644 src/TemplateAlgo.hs
+ create mode 100644 stack.yaml.lock
+ 4 files changed, 425 insertions(+), 1 deletion(-)
+ create mode 100644 ghci.log
+ create mode 100644 src/TemplateAlgo.hs
+ create mode 100644 stack.yaml.lock
+]0;airi@LAPTOP-S1M5429M: ~/cs2022[01;32mairi@LAPTOP-S1M5429M[00m:[01;34m~/cs2022[00m$ ]0;airi@LAPTOP-S1M5429M: ~/cs2022[01;32mairi@LAPTOP-S1M5429M[00m:[01;34m~/cs2022[00m$ ggiitt  ppuusshh
+
+Enumerating objects: 10, done.
+Counting objects:  10% (1/10)Counting objects:  20% (2/10)Counting objects:  30% (3/10)Counting objects:  40% (4/10)Counting objects:  50% (5/10)Counting objects:  60% (6/10)Counting objects:  70% (7/10)Counting objects:  80% (8/10)Counting objects:  90% (9/10)Counting objects: 100% (10/10)Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Enumerating objects: 10, done.
+Counting objects:  10% (1/10)Counting objects:  20% (2/10)Counting objects:  30% (3/10)Counting objects:  40% (4/10)Counting objects:  50% (5/10)Counting objects:  60% (6/10)Counting objects:  70% (7/10)Counting objects:  80% (8/10)Counting objects:  90% (9/10)Counting objects: 100% (10/10)Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects:  14% (1/7)Compressing objects:  28% (2/7)Compressing objects:  42% (3/7)Compressing objects:  57% (4/7)Compressing objects:  71% (5/7)Compressing objects:  85% (6/7)Compressing objects: 100% (7/7)Compressing objects:  14% (1/7)Compressing objects:  28% (2/7)Compressing objects:  42% (3/7)Compressing objects:  57% (4/7)Compressing objects:  71% (5/7)Compressing objects:  85% (6/7)Compressing objects: 100% (7/7)Compressing objects: 100% (7/7), done.
+Compressing objects: 100% (7/7), done.
+Writing objects:  14% (1/7)Writing objects:  28% (2/7)Writing objects:  14% (1/7)Writing objects:  28% (2/7)Writing objects:  42% (3/7)Writing objects:  42% (3/7)Writing objects:  57% (4/7)Writing objects:  71% (5/7)Writing objects:  57% (4/7)Writing objects:  85% (6/7)Writing objects:  71% (5/7)Writing objects: 100% (7/7)Writing objects:  85% (6/7)Writing objects: 100% (7/7)Writing objects: 100% (7/7), 7.74 KiB | 1.11 MiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0)
+Writing objects: 100% (7/7), 7.74 KiB | 1.11 MiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To github.com:kubochichan/cs2022
+   8c0117f..850bc62  main -> main
+To github.com:kubochichan/cs2022
+   8c0117f..850bc62  main -> main
+]0;airi@LAPTOP-S1M5429M: ~/cs2022[01;32mairi@LAPTOP-S1M5429M[00m:[01;34m~/cs2022[00m$ ]0;airi@LAPTOP-S1M5429M: ~/cs2022[01;32mairi@LAPTOP-S1M5429M[00m:[01;34m~/cs2022[00m$ Script started on 2022-09-26 11:31:06+09:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="124" LINES="16"]
+]0;airi@LAPTOP-S1M5429M: ~/cs2022[01;32mairi@LAPTOP-S1M5429M[00m:[01;34m~/cs2022[00m$ cat ![K'wha[Kich [K[K[K[K[K[K[KP[K`which lghci`
+#!/bin/bash
+ginput | tee -a -i ghci.log | stack exec -- ghci 2>&1 | tee -a -i ghci.log
+]0;airi@LAPTOP-S1M5429M: ~/cs2022[01;32mairi@LAPTOP-S1M5429M[00m:[01;34m~/cs2022[00m$ code ~/.local/bin
+]0;airi@LAPTOP-S1M5429M: ~/cs2022[01;32mairi@LAPTOP-S1M5429M[00m:[01;34m~/cs2022[00m$ code  [K^[K~/local[C.local[C[C[C[C[C/bin[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Klghci src/TE[KemplateAlgo.hs 
+[0mExecutable named ghici not found on path: ["/home/airi/cs2022/.stack-work/install/x86_64-linux-tinfo6/61e2a3bf7a0507b9508265058626c50f9e98603c86b5cdd29c71409291ecdeed/8.10.7/bin","/home/airi/.stack/snapshots/x86_64-linux-tinfo6/61e2a3bf7a0507b9508265058626c50f9e98603c86b5cdd29c71409291ecdeed/8.10.7/bin","/home/airi/.stack/compiler-tools/x86_64-linux-tinfo6/ghc-8.10.7/bin","/home/airi/.stack/programs/x86_64-linux/ghc-tinfo6-8.10.7/bin","/home/airi/.local/bin","/home/airi/.local/bin","/home/airi/.vscode-server/bin/74b1f979648cc44d385a2286793c226e611f59e7/bin/remote-cli","/home/airi/.local/bin","/home/airi/.local/bin","/usr/local/sbin","/usr/local/bin","/usr/sbin","/usr/bin","/sbin","/bin","/usr/games","/usr/local/games","/usr/lib/wsl/lib","/mnt/c/Windows/system32","/mnt/c/Windows","/mnt/c/Windows/System32/Wbem","/mnt/c/Windows/System32/WindowsPowerShell/v1.0/","/mnt/c/Windows/System32/OpenSSH/","/mnt/c/Users/watas/AppData/Local/Microsoft/WindowsApps","/mnt/c/Users/watas/AppData/Local/Programs/Microsoft VS Code/bin","/snap/bin"][0m
+]0;airi@LAPTOP-S1M5429M: ~/cs2022[01;32mairi@LAPTOP-S1M5429M[00m:[01;34m~/cs2022[00m$ 
+]0;airi@LAPTOP-S1M5429M: ~/cs2022[01;32mairi@LAPTOP-S1M5429M[00m:[01;34m~/cs2022[00m$ lghci src/TemplateAlgo.hs [9Pcode ~/.local/bin[K[K[K[K[K[K[K[K[K[K[K[Kat `which lghci`[C[1P[1P[1@o[1@d[1@e
+]0;airi@LAPTOP-S1M5429M: ~/cs2022[01;32mairi@LAPTOP-S1M5429M[00m:[01;34m~/cs2022[00m$ code `which lghci`lghci src/TemplateAlgo.hs code [K[21@lghci src/TemplateAlgo.hs[C
+GHCi, version 8.10.7: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/airi/cs2022/.ghci
+[1 of 1] Compiling TemplateAlgo     ( src/TemplateAlgo.hs, interpreted )
+
+[;1msrc/TemplateAlgo.hs:4:17: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    Variable not in scope: proc :: String -> String[0m[0m
+[;1m[34m  |[0m[0m
+[;1m[34m4 |[0m[0m main = interact [;1m[31mproc[0m[0m
+[;1m[34m  |[0m[0m[;1m[31m                 ^^^^[0m[0m
+[0m[0m[0mFailed, no modules loaded.
+2022-09-26 12:03:47.114122251
+[?1h=>>> :q
+[?1l>Leaving GHCi.
+]0;airi@LAPTOP-S1M5429M: ~/cs2022[01;32mairi@LAPTOP-S1M5429M[00m:[01;34m~/cs2022[00m$ lghci src/TemplateAlgo.hs 
+GHCi, version 8.10.7: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/airi/cs2022/.ghci
+[1 of 1] Compiling TemplateAlgo     ( src/TemplateAlgo.hs, interpreted )
+
+[;1msrc/TemplateAlgo.hs:4:17: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    Variable not in scope: proc :: String -> String[0m[0m
+[;1m[34m  |[0m[0m
+[;1m[34m4 |[0m[0m main = interact [;1m[31mproc[0m[0m
+[;1m[34m  |[0m[0m[;1m[31m                 ^^^^[0m[0m
+[0m[0m[0mFailed, no modules loaded.
+2022-09-26 12:04:38.257550775
+[?1h=>>> :r
+[?1l>   1  module TemplateAlgo where
+   2  
+   3  main :: IO ()
+   4  main = interact proc
+   5  
+   6  func :: String -> String
+   7  func input = case map (map readInt . words) (lines input) of
+   8      _ -> undefined
+   9  
+  10  readInt :: String -> Int
+  11  readInt = read
+[1 of 1] Compiling TemplateAlgo     ( src/TemplateAlgo.hs, interpreted )
+
+[;1msrc/TemplateAlgo.hs:4:17: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    Variable not in scope: proc :: String -> String[0m[0m
+[;1m[34m  |[0m[0m
+[;1m[34m4 |[0m[0m main = interact [;1m[31mproc[0m[0m
+[;1m[34m  |[0m[0m[;1m[31m                 ^^^^[0m[0m
+[0m[0m[0mFailed, no modules loaded.
+2022-09-26 12:06:44.675281835
+[?1h=>>> :l app/m[KMi[Ka[Kain.hs
+[?1l>   1    module Main where
+   2    
+   3    main :: IO ()
+   4    main = interact func
+   5    
+   6    func :: String -> String
+   7    func input = undefined (map show [1 .. 3])
+   8    
+   9    showInt :: Int -> String
+  10    showInt = show
+[1 of 1] Compiling Main             ( app/Main.hs, interpreted )
+Ok, one module loaded.
+2022-09-26 12:10:04.9975481
+[?1h=>>> ma[K[K:r
+[?1l>   1  module Main where
+   2  
+   3  main :: IO ()
+   4  main = interact func
+   5  
+   6  func :: String -> String
+   7  func input = unlines (map show [1 .. 3])
+   8  
+   9  showInt :: Int -> String
+  10  showInt = show
+[1 of 1] Compiling Main             ( app/Main.hs, interpreted )
+Ok, one module loaded.
+2022-09-26 12:10:31.849916585
+[?1h=>>> main
+[?1l>1
+2
+3
+2022-09-26 12:10:36.903285069
+[?1h=>>> 
+[?1l><stdin>: hGetChar: illegal operation (handle is semi-closed)
+]0;airi@LAPTOP-S1M5429M: ~/cs2022[01;32mairi@LAPTOP-S1M5429M[00m:[01;34m~/cs2022[00m$ Script started on 2022-10-04 23:31:22+09:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="124" LINES="16"]
+]0;airi@LAPTOP-S1M5429M: ~/cs2022[01;32mairi@LAPTOP-S1M5429M[00m:[01;34m~/cs2022[00m$ cat `which lghci`
+#!/bin/bash
+
+stack exec -- ghci $1
+]0;airi@LAPTOP-S1M5429M: ~/cs2022[01;32mairi@LAPTOP-S1M5429M[00m:[01;34m~/cs2022[00m$ lghci app/Main [K.hs
+GHCi, version 8.10.7: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/airi/cs2022/.ghci
+[1 of 1] Compiling Main             ( app/Main.hs, interpreted )
+Ok, one module loaded.
+2022-10-04 23:32:59.458152173
+[?1h=>>> 27183[K2 @[K`mod` 818
+[?1l>188
+2022-10-04 23:59:09.162129706
+[?1h=>>> ;r
+[?1l>
+[;1m<interactive>:2:2: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    Parse error: module header, import declaration
+    or top-level declaration expected.[0m[0m
+[0m[0m[0m2022-10-04 23:59:26.104522003
+[?1h=>>> :r
+[?1l>   1  module Main where
+   2  
+   3  showInt :: Int -> String
+   4  showInt = show
+   5  
+   6  readInt :: String -> Int
+   7  readInt = read
+   8  
+   9  main :: IO ()
+  10  main = interact func
+  11  
+  12  -- func :: String -> String
+  13  -- func input = unlines ["Hello Algo-method!"]
+  14  
+  15  -- func :: String -> String
+  16  -- func input = unlines (map show [1 .. 3])
+  17  
+  18  func :: String -> String
+  19  func input = undefined
+Ok, one module loaded.
+2022-10-04 23:59:34.621246186
+[?1h=>>> :r
+[?1l>   1  module Main where
+   2  
+   3  showInt :: Int -> String
+   4  showInt = show
+   5  
+   6  readInt :: String -> Int
+   7  readInt = read
+   8  
+   9  main :: IO ()
+  10  main = interact func
+  11  
+  12  -- func :: String -> String
+  13  -- func input = unlines ["Hello Algo-method!"]
+  14  
+  15  -- func :: String -> String
+  16  -- func input = unlines (map show [1 .. 3])
+  17  
+  18  func :: String -> String
+  19  func input = showInt (27182 `mod` 818)
+[1 of 1] Compiling Main             ( app/Main.hs, interpreted )
+Ok, one module loaded.
+2022-10-05 00:01:09.329524658
+[?1h=>>> :r
+[?1l>   1  module Main where
+   2  
+   3  showInt :: Int -> String
+   4  showInt = show
+   5  
+   6  readInt :: String -> Int
+   7  readInt = read
+   8  
+   9  main :: IO ()
+  10  main = interact func
+  11  
+  12  -- func :: String -> String
+  13  -- func input = unlines ["Hello Algo-method!"]
+  14  
+  15  -- func :: String -> String
+  16  -- func input = unlines (map show [1 .. 3])
+  17  
+  18  -- func :: String -> String
+  19  -- func input = showInt (27182 `mod` 818)
+  20  
+  21  -- func :: String -> String
+  22  -- func input = showInt (314 * (159 + 265) - 358)
+  23  
+  24  func :: String -> String
+  25  func input = showInt (24 * 60 * 60)
+[1 of 1] Compiling Main             ( app/Main.hs, interpreted )
+Ok, one module loaded.
+2022-10-05 00:09:32.845090471
+[?1h=>>> :q
+[?1l>Leaving GHCi.
+]0;airi@LAPTOP-S1M5429M: ~/cs2022[01;32mairi@LAPTOP-S1M5429M[00m:[01;34m~/cs2022[00m$ git add .
